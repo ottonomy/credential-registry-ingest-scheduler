@@ -1,4 +1,4 @@
-name: Publish test LearningProgram 1 from examples to teh registry
+name: Publish test LearningProgram 1 from examples to the registry
 on: workflow_dispatch
 env:
   REGISTRY_ENV: "sandbox"
