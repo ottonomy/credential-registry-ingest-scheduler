@@ -1,0 +1,13 @@
+name: Publish test LearningProgram 1 from examples to teh registry
+on: manual
+env:
+  REGISTRY_ENV: "sandbox"
+  URLS: "https://credentialengine.github.io/credential-registry-ingest-examples/LearningProgram/1/LearningProgram-1.json"
+jobs:
+  publish:
+    uses: credential-engine/credential-registry-publish-action@main
+    with:
+      registry-env: ${{ env.REGISTRY_ENV }}
+      urls: ${{ env.URLS }}
+      organization-ctid: "ce-7f42a13b-2c7e-4cbb-bbae-337a5187cf61"
+      registry-api-key: ${{ secrets.SANDBOX_API_KEY }}
