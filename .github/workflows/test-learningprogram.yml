@@ -1,5 +1,5 @@
 name: Publish test LearningProgram 1 from examples to teh registry
-on: manual
+on: workflow_dispatch
 env:
   REGISTRY_ENV: "sandbox"
   URLS: "https://credentialengine.github.io/credential-registry-ingest-examples/LearningProgram/1/LearningProgram-1.json"
